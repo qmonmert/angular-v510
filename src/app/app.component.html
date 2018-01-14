@@ -1,5 +1,5 @@
-<ul>
-  <li class="text" *ngFor="let item of items | async">
-    {{item.name}}
-  </li>
-</ul>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of items | async">
+    <mat-checkbox checked="true">{{item.name}}</mat-checkbox>
+  </mat-list-item>
+</mat-list>
